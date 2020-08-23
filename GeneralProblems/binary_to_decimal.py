@@ -1,3 +1,6 @@
+import sys
+
+
 def bin_convert(n):
     dec = 0
     p = 0
@@ -15,7 +18,7 @@ def bin_convert(n):
 
 
 def main():
-    n = input("Enter the binary: ")
+    n = sys.argv[1]
     decimal = bin_convert(int(n))
     print("Decimal Equivalent: "+str(decimal))
 
